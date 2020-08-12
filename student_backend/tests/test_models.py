@@ -33,17 +33,16 @@ class StudentTestCase(TestCase):
         self.assertEqual(self.student.lastname, 'Sequeira')
 
 class AddressTestCase(TestCase):
-    def setUp(self):
-        saved_address = Address.objects.create(
+    @classmethod
+    def setUpTestData(self):
+        self.address = Address.objects.create(
             state="san jose",
             city="san pedro",
             zipcode="110202"
         )
     
     def test_address_created_successfully(self):
-        address = Address.objects.get(id="1")
-        
-        self.assertEqual(address.__str__(), "san jose, san pedro, 110202")
-        self.assertEqual(address.state, "san jose")
-        self.assertEqual(address.city, "san pedro")
-        self.assertEqual(address.zipcode, "110202")
+        self.assertEqual(self.address.__str__(), "san jose, san pedro, 110202")
+        self.assertEqual(self.address.state, "san jose")
+        self.assertEqual(self.address.city, "san pedro")
+        self.assertEqual(self.address.zipcode, "110202")

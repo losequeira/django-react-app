@@ -1,0 +1,30 @@
+#IDE Configuration
+.vscode
+
+# Python Cache
+__pycache__
+
+#Database Info
+db.sqlite3
+
+# React dependencies
+/student_frontend/node_modules
+/student_frontend/.pnp
+/student_frontend/.pnp.js
+
+# testing
+/student_frontend/coverage
+
+# production
+/student_frontend/build
+
+# misc
+/student_frontend/.DS_Store
+/student_frontend/.env.local
+/student_frontend/.env.development.local
+/student_frontend/.env.test.local
+/student_frontend/.env.production.local
+
+/student_frontend/npm-debug.log*
+/student_frontend/yarn-debug.log*
+/student_frontend/yarn-error.log*

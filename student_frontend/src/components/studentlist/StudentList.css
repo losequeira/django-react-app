@@ -1,0 +1,25 @@
+.container {
+    position: relative;
+    width: 80%;
+    margin: 2em auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead {
+    border-bottom: 1px solid #333;
+}
+
+th {
+    background-color: lavender;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
